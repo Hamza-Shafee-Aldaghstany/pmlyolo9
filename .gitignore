@@ -1,0 +1,21 @@
+# Ignore large datasets or external directories
+/data/Aerial View Vehicle Detection.v1i.coco/
+/data/Aerial View Vehicle Detection.v1i.yolov8/
+
+# Ignore image files in data/images
+data/images/
+
+# Ignore node_modules (if this is a Node.js project)
+node_modules/
+
+# Ignore all files in weights directory but not the directory itself
+weights/*
+!weights/
+
+# Ignore all files in runs/detect but not the directory itself
+runs/detect/*
+!runs/detect/
+
+# Ignore all files in runs/train but not the directory itself
+runs/train/*
+!runs/train/
