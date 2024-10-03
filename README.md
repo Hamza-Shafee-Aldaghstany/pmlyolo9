@@ -4,7 +4,8 @@
 # Vehicle Detection using YOLOv9
 
 This repository contains a YOLOv9-based vehicle detection system that identifies **11 classes** for cars and **10 additional vehicle types**, including bicycles, trucks, buses, pedestrians, and more.
-
+![Original Image](figure/d71e7300ae4dc39b6cea3db2fd76a8830f8b13b1cda098e0f4eff1bc.jpg)
+![Dettection with labels and conf score](figure/b15083ac92e7813c15f58c0a2c9b1da57e90fc51f2b83c74f7893fd7.jpg)
 ## Features
 - **Real-time vehicle detection** using the state-of-the-art YOLOv9 model.
 - **11 vehicle classes** including cars, bicycles, trucks, buses, pedestrians, and more.
@@ -21,8 +22,8 @@ This repository contains a YOLOv9-based vehicle detection system that identifies
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo-link.git
-   cd your-repo
+   git clone https://github.com/Hamza-Shafee-Aldaghstany/pmlyolo9.git
+   cd pmlyolo9
 Build the Docker images:
 
 For the backend (FastAPI + YOLOv9 model):
@@ -46,10 +47,11 @@ Dataset
 The dataset used for training the model consists of various vehicle types and is publicly available. You can download the dataset from the following link:
 
 Dataset for Vehicle Detection
-
+https://universe.roboflow.com/teknofestproject/aerial-view-vehicle-detection
 
 YOLOv9 Model Weights
 After downloading, place the weights file in the appropriate directory before running the backend.
+https://drive.google.com/drive/folders/171w8iZwVY5YU4LYGaYnJmb1nblyWIcf7?usp=sharing
 
 Model Architecture
 The model used is based on YOLOv9, with 11 car classes and 10 other vehicle-related classes. The detection system is highly optimized for real-time performance.
