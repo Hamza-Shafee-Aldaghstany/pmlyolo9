@@ -21,7 +21,7 @@ if uploaded_file is not None:
 
         # Send the image to the API
         # response = requests.post("http://api:8000/predict/", files={"file": img_bytes})
-        response = requests.post("http://fastapi-container:8000/predict/", files={"file": img_bytes})
+        response = requests.post("http://fastapi:8000/predict/", files={"file": img_bytes})
         if response.status_code == 200:
             result_image = Image.open(io.BytesIO(response.content))
             st.image(result_image, caption="Image with Detection Boxes", use_column_width=True)

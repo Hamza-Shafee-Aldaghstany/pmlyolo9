@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  fastapi:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+  
+  streamlit:
+    build:
+      context: ./deployment/app
+      dockerfile: Dockerfile
+    ports:
+      - "8501:8501"
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - fastapi
+      - streamlit
